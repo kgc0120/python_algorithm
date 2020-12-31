@@ -1,17 +1,4 @@
-n, k = map(int, input().split())
-
-result = 0
-
-while True :
-  target = (n // k) * k
-  result += (n - target)
-  n = target
-
-  if n < k:
-    break
-  result +=1
-  n //= k
-
-result += (n - 1)
-print(result)
-print(result)
+# from music_scales import run -- 해당 파일에 함수를 선언해서 가져옴
+import music_scales 
+# 모든 파일을 가져와서 music_scales.함수() 이런식으로 사용
+music_scales.run()
